@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: AuthenticationService
+
+
+
+  datasource:
+      url: jdbc:mysql://localhost:3306/stargold
+      username: root
+      password: root123
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+jwt:
+    secret: my-super-secret-key-my-super-secret-key
+    expiration: 3600000
+
+server:
+  port: 1010
